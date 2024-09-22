@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* Fallback for unsupported browsers */
+    background-image: url('https://wallpaperbat.com/img/828888-electric-wallpaper-4k-neon-colorful-dark-background-lighting-abstract.jpg'); /* Replace with your image link */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Slight transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7); /* Neon glow */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #1c1c1c;
+    border: 2px solid #00ffcc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #00ffcc; /* Neon color for the text */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #333;
+    box-shadow: 0 0 10px #00ffcc;
+}
+
+#status {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    text-shadow: 0 0 8px #00ffcc; /* Glowing text */
+}
+
+#restart-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #00ffcc;
+    color: #1c1c1c;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 10px #00ffcc;
+}
+
+#restart-btn:hover {
+    background-color: #00e6b8;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00e6b8;
+}
+
